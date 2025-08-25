@@ -1,0 +1,115 @@
+body {
+  font-family: 'Quicksand', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #fffbe7 0%, #ffe7f0 100%);
+  margin: 0;
+  color: #6a4227;
+}
+header {
+  text-align: center;
+  background: #fff9d7;
+  padding: 2rem 0 1rem 0;
+  box-shadow: 0 2px 8px rgba(106,66,39,0.08);
+}
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.7rem;
+  margin: 0;
+  color: #e59a13;
+  letter-spacing: 2px;
+}
+header p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0 0;
+  color: #c4821c;
+}
+.gallery {
+  padding: 2rem;
+  max-width: 950px;
+  margin: 0 auto;
+}
+.waffle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.waffle-item {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 3px 12px rgba(229,154,19,0.09);
+  padding: 1.3rem;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.waffle-item:hover {
+  box-shadow: 0 6px 24px rgba(229,154,19,0.18);
+}
+.waffle-item img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 14px;
+  margin-bottom: 0.6rem;
+  object-fit: cover;
+  background: #fffbe7;
+  border: 2px solid #ffe7b2;
+}
+.waffle-item p {
+  font-size: 1.1rem;
+  color: #e59a13;
+  margin: 0.4rem 0 0 0;
+  font-weight: bold;
+}
+.description {
+  display: block;
+  font-size: 0.98em;
+  color: #947143;
+  margin: 0.2em 0 0.2em 0;
+}
+.price {
+  display: block;
+  margin-top: 0.5em;
+  font-weight: bold;
+  color: #e59a13;
+  font-size: 1.15em;
+}
+.instructions {
+  font-size: 0.98rem;
+  color: #947143;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+.about {
+  background: #fff5e1;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(229,154,19,0.06);
+  max-width: 700px;
+  margin: 2rem auto 1.5rem auto;
+  padding: 1.7rem;
+  text-align: center;
+}
+.about h2 {
+  color: #e59a13;
+  margin-bottom: 0.7rem;
+}
+.about p {
+  font-size: 1.1rem;
+  color: #6a4227;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fff9d7;
+  font-size: 1rem;
+  color: #c4821c;
+  margin-top: 2rem;
+}
+@media (max-width: 700px) {
+  .waffle-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .gallery, .about {
+    padding: 1rem;
+  }
+}
